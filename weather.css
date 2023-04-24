@@ -1,0 +1,91 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('https://wallpaperaccess.com/full/1540005.jpg');
+    font-size: 120%;
+  } 
+ 
+  .card {
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width:100%;
+    max-width: 460px;
+    margin: 1em;
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin: 0.8em;
+    border-radius: 100%;
+    border: none;
+    height: 56px;
+    width: 66px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    size: 3px;
+
+  }
+  button:hover {
+    background: #7c7c7c2b;
+  }
+
+  input.search-bar {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 30px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: 80%;
+
+  }
+
+  .temp {
+    font-size: 40px;
+    margin: 0%;
+  }
+
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.6em;
+  }
+
+  .description {
+    text-transform: capitalize;
+    margin-left: 9px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .weather.loading:after {
+    visibility: visible;
+    color: white;
+    position: absolute;
+    top: 0;
+  }
